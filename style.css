@@ -123,9 +123,13 @@ section .task-column .task button{
   width: 100vw;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+}
+
+.modal.active {
+  display: flex;
 }
 
 .modal .bg{
@@ -156,11 +160,13 @@ section .task-column .task button{
 }
 
 .modal .center button{
-  background-color: var(--bg-btn-color);
+  background-color: var(--bg-task-color);
   border: none;
   outline: none;
   color: var(--primary-text-color);
   padding: var(--padding-m) var(--padding-l);
   border-radius: var(--border-radius-m);
   cursor: pointer;
+  width: fit-content;
+  align-self: center;
 }
